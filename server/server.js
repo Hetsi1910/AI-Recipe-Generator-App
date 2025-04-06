@@ -69,9 +69,9 @@ app.get("/recipeStream", (req, res) => {
 });
 
 async function fetchGroqCompletionsStream(messages, callback) {
-    const Groq_API_KEY = "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";
+    const Groq_API_KEY = "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";   //apikey
     const groq = new Groq({ apiKey: Groq_API_KEY });
-    const aiModel = "mistral-saba-24b";
+    const aiModel = "mistral-saba-24b";   //model
 
     try {
         const completion = await groq.chat.completions.create({
