@@ -111,7 +111,7 @@ function App() {
     const initializeEventStream = () => {
         const recipeInputs = { ...recipeData };
         const queryParams = new URLSearchParams(recipeInputs).toString();
-        const url = `http://localhost:3001/recipeStream?${queryParams}`;
+        const url = `http://localhost:3001/recipeStream?${queryParams}`;    //PORT
 
         eventSourceRef.current = new EventSource(url);
 
